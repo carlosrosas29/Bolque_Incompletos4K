@@ -1,0 +1,85 @@
+<html>
+   <head>	
+      <title>Creacion de metricas</title>
+   </head>
+  <body bgcolor=papayawhip text=black>
+  <table width="1360" height="30" border="0" bgcolor="deeppink" cellpadding="0" cellspacing="0">
+   	<th>
+	   <div align="left">
+		<font size="10" color="white">Evaluaci&oacute;n de proyectos &nbsp;&nbsp;&nbsp;&nbsp; 
+		<font size="5">Administrador 
+
+       <script lenguage="javascript">
+       <!--
+       function Cerrar_Session() {
+       window.location='PaginaPrincipal.php';
+
+       }
+       //-->
+       </script>
+		<button style="background-color:green; color:white" type="submit" onclick="Cerrar_Session()">Cerrar sesion</button> 
+		</font>
+	   </div>
+	</table>
+	 <br>
+
+       <script lenguage="javascript">
+       <!--
+       function abre_Resultados() {
+       window.location='Resultados.php';
+
+       }
+       //-->
+       </script>
+     <script lenguage="javascript">
+       <!--
+       function abre_Metricas() {
+       window.location='CreacionMetricas.html';
+
+       }
+       //-->
+       </script>
+       <script lenguage="javascript">
+       <!--
+       function abre_Captura() {
+       window.location='CapturaEvaluadores.html';//, "Ventana", "width=500,height=400,scrollbars=yes,toolbar=no");
+
+       }
+       //-->
+       </script>
+       <script lenguage="javascript">
+       <!--
+       function abre_CreacionCombo() {
+       window.location='CreacionCombocatorias.html';//, "Ventana", "width=500,height=400,scrollbars=yes,toolbar=no");
+
+       }
+       //-->
+       </script>
+<form action="GuardarMetricas.php" method="post">
+	     <select name="programa">    
+       <option selected="selected">Seleciona una opcion </option>
+       <option value="CapturaEvaluador" onClick="abre_Captura ()">Captura de evaluadores</option>
+       <option value="CreacionMetricas" onClick="abre_Metricas()">Creaci&oacute;n de metricas</option>
+       <option value="ResultadosFinales" onClick="abre_Resultados()">Resultados finales</option>
+        <option value="CrearCombocatoria" onClick="abre_CreacionCombo()">Creacion de combocatorias</option>
+       </select>
+       <br>
+       <font size="5" color="deeppink">Creaci&oacute;n de metrica </font> 
+       <br>
+        <textarea name="Criterio1" rows="1" cols="60" maxlength="300" > 	</textarea>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" name="Calificacion1" step="1" min="0" max="10"> 
+        <br>
+        <textarea name="Criterio2" rows="1" cols="60" maxlength="300" >  </textarea>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" name="Calificacion2" step="1" min="0" max="10"> 
+        <br><textarea name="Criterio3" rows="1" cols="60" maxlength="300" >  </textarea>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" name="Calificacion3" step="1" min="0" max="10"> 
+        <br> 
+        <br> <br>
+         <center><button style="background-color:deeppink; color:white"type="submit">Guardar</button>  </center>
+</form>
+   </body>
+</html>
+    

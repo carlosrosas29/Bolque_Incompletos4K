@@ -1,0 +1,92 @@
+<html>
+   <head>
+      <title> Captura Evaluadores</title>
+   </head>
+   <body bgcolor=papayawhip text=black>
+	<table width="1360" height="30" border="0" bgcolor="deeppink" cellpadding="0" cellspacing="0">
+   	<th>
+	   <div align="left">
+		<font size="10" color="white">Evaluaci&oacute;n de proyectos &nbsp;&nbsp;&nbsp;&nbsp; 
+		<font size="5">Administrador 
+       <script lenguage="javascript">
+       <!--
+       function Cerrar_Session() {
+       window.location='PaginaPrincipal.php';
+
+       }
+       //-->
+       </script>
+		<button style="background-color:green; color:white"type="submit" onclick="Cerrar_Session()">Cerrar sesion</button> 
+		</font>
+	   </div> 
+	 </th>
+	 </table>
+	 <br>
+       <script lenguage="javascript">
+       <!--
+       function abre_Resultados() {
+       window.location='Resultados.php';
+
+       }
+       //-->
+       </script>
+              <script lenguage="javascript">
+       <!--
+       function abre_CreacionCombo() {
+       window.location='CreacionCombocatorias.html';//, "Ventana", "width=500,height=400,scrollbars=yes,toolbar=no");
+
+       }
+       //-->
+       </script>
+     <script lenguage="javascript">
+       <!--
+       function abre_Metricas() {
+       window.location='CreacionMetricas.html';
+
+       }
+       //-->
+       </script>
+       <script lenguage="javascript">
+       <!--
+       function abre_Captura() {
+       window.location='CapturaEvaluadores.html';//, "Ventana", "width=500,height=400,scrollbars=yes,toolbar=no");
+
+       }
+       //-->
+       </script>
+            <select name="programa">    
+       <option selected="selected">Seleciona una opcion </option>
+       <option value="CapturaEvaluador" onClick="abre_Captura ()">Captura de evaluadores</option>
+       <option value="CreacionMetricas" onClick="abre_Metricas()">Creaci&oacute;n de metricas</option>
+       <option value="ResultadosFinales" onClick="abre_Resultados()">Resultados finales</option>
+       <option value="CrearCombocatoria" onClick="abre_CreacionCombo()">Creacion de combocatorias</option>
+       </select>
+      
+       <br>
+       <font size="5" color="deeppink">Captura de evaluadores </font> 
+       <br> <br>
+       Buscar usuario registrado(en caso de que el usuario este registrado)
+       <br> <br>
+       <form action="buscaEvaluador.php" method="post">
+       <input type="text" size="25" maxlength="25" placeholder="Buscar usuario" name="Buscar"> 
+       <button type"sumit"> <img src="Lupa.png" width="20" height="20"/> </button>
+       </form>
+       <br><br>
+       Usuario: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="50" maxlength="50" name="usuario">
+       <br><br>
+       Correo electr&oacute;nico: <input type="text" size="50" maxlength="50" name="Email">
+       <br><br>
+       <button style="background-color:deeppink ;color:white"type="sumit">Agregar como evaluador</button>
+       <br> <br>
+<form action="RegistroEvaluador.php" method="post">
+       Registrar evaluador( en caso de que el usuario NO este registrado)
+       <br><br>
+       <input type="text" name="nombre" size="25" placeholder="Nombre(s)" maxlength="25"> 
+       <input type="text" name="apellidos"size="35" maxlength="35" placeholder="Apellidos"> 
+       <br><br>
+       <input type="text" name="correo" size="60" maxlength="70" placeholder="Correo electr&oacute;nico">
+       <br><br>
+       <button style="background-color:deeppink ;color:white"type="sumit">Registar evaluador </button>
+</form>
+</body>
+</html>

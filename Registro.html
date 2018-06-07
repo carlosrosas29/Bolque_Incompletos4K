@@ -1,0 +1,52 @@
+<html>
+   <head>
+      <title> Registro </title>
+   </head>
+   <body bgcolor=papayawhip text=black>
+   	<form action="Cerrar.php" method="post">
+	<table width="1360" height="30" border="0" bgcolor="deeppink" cellpadding="0" cellspacing="0">
+   	<th>
+	   <div align="left">
+		<font size="10" color="white">Evaluaci&oacute;n de proyectos &nbsp;&nbsp;&nbsp;&nbsp; 
+		<font size="5">Usuarios
+
+       <script lenguage="javascript">
+       <!--
+       function Cerrar_Session() {
+       window.location='Login.html';
+
+       }
+       //-->
+       </script>
+		<button type="submit" style="background-color:green ;color:white" onclick="Cerrar_Session()">Cerrar sesion</button>
+		</font>
+	   </div> 
+	 </th>
+	 </table>
+	 </form> 
+<table width="600" height="10" border="0" bgcolor="deeppink" cellpadding="0" cellspacing="0">
+	<th>
+	 <div align="left">
+	 <font size="5"> 
+	<a href="Registro.html">Registrar proyecto</a>
+	<th>
+<a href="ConsultaProyectos.php">Mis proyectos</a> 
+ <th> <a href="Resultadousuario.php">Resultados</a>
+	</font>
+	 </th>
+</table>
+ <form action="RegistroProyectos.php" method="post">	
+	<h4> Proyecto numero </h4> 
+	<input type="text" size="50" maxlength="50" placeholder="Nombre del proyecto" name="nombre"> <br>
+        <textarea name="descripcion" rows="6" cols="38" maxlength="300" placeholder="Descripcion del proyecto"> 	</textarea>
+	<h4>Responsable del proyecto:</h4> <br>
+	<input type="text" size="25" maxlength="25" placeholder="Nombre" name="nombreReponsable"> 
+	<input type="text" size="25" maxlength="35" placeholder="Apellido" name="apeido_Responsable"> <br>
+	<font size="5">Duraci&oacute;n del proyecto: </font> <br>
+	<input type="number" name="Meses"> &nbsp;&nbsp;&nbsp; <font size="3"> Meses</font> <br>
+	<font size="3">Costo estimado(MXN) </font> <br>
+	<input type="number" name="Costo"> <br>
+	<input type="submit" value="Guardar"/>
+   </form>
+   </body>
+</html>
